@@ -3,12 +3,12 @@
 Set up using instructions at: http://docs.netman.r3.com/quick-start.html
 
 ## Doorman
-  p2pAddress: 12000
-  ezmListener: 12001
-  ssh:
-    port: 12002
-    user: testuser
-    password: example-password
+  - p2pAddress: 12000
+  - ezmListener: 12001
+  - ssh:
+    - port: 12002
+    - user: testuser
+    - password: example-password
 
 Start with:
 ```
