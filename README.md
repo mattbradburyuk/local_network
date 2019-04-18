@@ -12,7 +12,7 @@ Set up using instructions at: http://docs.netman.r3.com/quick-start.html
 
 Start with:
 ```
-cd doorman
+$ cd doorman
 $ java -jar doorman-0.4.jar --config-file doorman.conf --ignore-migration
 ```
 
@@ -29,12 +29,12 @@ $ java -jar doorman-0.4.jar --config-file doorman.conf --ignore-migration
 
 Initial registration:
 ```
-cd notary
+$ cd notary
 $ java -jar corda-4.0.jar --initial-registration --network-root-truststore-password example-password --network-root-truststore certificates/networkRootTrustStore.jks
 ```
 Start the notary:
 ```
-cd notary
+$ cd notary
 $ java -jar corda-4.0.jar
 ```
 
@@ -47,11 +47,14 @@ $ java -jar corda-4.0.jar
     password: example-password
 
 Initial registrations:
+
 ```
+$ cd network_map
 $ java -jar doorman-0.4.jar --config-file network-map.conf --set-network-parameters network-parameters.conf --network-truststore certificates/certificateStore.jks --truststore-password example-password --root-alias cordarootca --ignore-migration
 ```
 
 Start the Network Map:
 ```
+$ cd network_map
 $ java -jar doorman-0.4.jar --config-file network-map.conf
 ```
