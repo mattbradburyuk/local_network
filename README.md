@@ -17,15 +17,15 @@ $ java -jar doorman-0.4.jar --config-file doorman.conf --ignore-migration
 ```
 
 ## Notary:
-  Name: "O=NotaryA,L=London,C=GB"
-  Address: localhost:13000
-  ssh:
-    port:13002
-  rpc:
-    address: 13003
-    admin: 13004
-    rpcuser: testuser
-    rpcpassword: example-password
+  - Name: "O=NotaryA,L=London,C=GB"
+  - Address: localhost:13000
+  - ssh:
+    - port:13002
+  - rpc:
+    - address: 13003
+    - admin: 13004
+    - rpcuser: testuser
+    - rpcpassword: example-password
 
 Initial registration:
 ```
@@ -39,12 +39,12 @@ $ java -jar corda-4.0.jar
 ```
 
 ## Network map:
-  Address: localhost:14000
-  ezmListener: 14001
-  ssh:
-    port: 14002
-    user: testuser
-    password: example-password
+  - Address: localhost:14000
+  - ezmListener: 14001
+  - ssh:
+    - port: 14002
+    - user: testuser
+    - password: example-password
 
 Initial registrations:
 
